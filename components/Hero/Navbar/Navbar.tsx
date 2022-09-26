@@ -33,14 +33,13 @@ const ListItem = styled.li`
   &:hover {
     transform: translateX(-40px);
     font-weight: 400;
-    color: #da6421;
   }
 `
 
 const Navbar = () => {
   return (
     <nav>
-      <ul className="text-white font-thin md:text-7xl text-6xl text-right">
+      <ul className="z-20 relative text-white font-thin sm:text-7xl md:text-8xl text-6xl text-right">
         <ListItem><LinkItem href="#">ABOUT</LinkItem></ListItem>
         <ListItem><LinkItem href="#">PROJECTS</LinkItem></ListItem>
         <ListItem><LinkItem href="#">POSTS</LinkItem></ListItem>
