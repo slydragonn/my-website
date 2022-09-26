@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components"
-import { COLORS } from "utils"
+import styled, { keyframes } from 'styled-components'
+import { COLORS } from 'utils'
 
 const scrollingLeft = keyframes`
   from {
@@ -36,8 +36,8 @@ interface ScrollContainerProps {
 export const ScrollContainer = styled.section<ScrollContainerProps>`
   z-index: 0;
   position: absolute;
-  top: ${props => props.position === 'top' ? 0 : "none"};
-  bottom: ${props => props.position === 'bottom' ? 0 : "none"};
+  top: ${props => (props.position === 'top' ? 0 : 'none')};
+  bottom: ${props => (props.position === 'bottom' ? 0 : 'none')};
   left: 0;
   width: 100%;
   height: auto;
@@ -58,11 +58,23 @@ export const ScrollText = styled.div<ScrollTextProps>`
   background-clip: text;
   -webkit-background-clip: text;
 
-  -moz-transform: translateX(${props => props.direction === 'left' ? '100%' : '-100%'});
-  -webkit-transform: translateX(${props => props.direction === 'left' ? '100%' : '-100%'});
-  transform: translateX(${props => props.direction === 'left' ? '100%' : '-100%'});
-  
-  -moz-animation: ${props => props.direction === 'left' ? scrollingLeft : scrollingRight} 10s linear infinite;
-  -webkit-animation: ${props => props.direction === 'left' ? scrollingLeft : scrollingRight} 10s linear infinite;
-  animation: ${props => props.direction === 'left' ? scrollingLeft : scrollingRight} 10s linear infinite;
+  -moz-transform: translateX(
+    ${props => (props.direction === 'left' ? '100%' : '-100%')}
+  );
+  -webkit-transform: translateX(
+    ${props => (props.direction === 'left' ? '100%' : '-100%')}
+  );
+  transform: translateX(
+    ${props => (props.direction === 'left' ? '100%' : '-100%')}
+  );
+
+  -moz-animation: ${props =>
+      props.direction === 'left' ? scrollingLeft : scrollingRight}
+    10s linear infinite;
+  -webkit-animation: ${props =>
+      props.direction === 'left' ? scrollingLeft : scrollingRight}
+    10s linear infinite;
+  animation: ${props =>
+      props.direction === 'left' ? scrollingLeft : scrollingRight}
+    10s linear infinite;
 `
