@@ -1,2 +1,6 @@
+export { default as AboutSection } from './About'
+export { default as GridTitle } from './GridTitle'
 export { default as HeroSection } from './Hero'
-export { MainLayout } from './layouts'
+export * from './layouts'
+export { default as LinkButton } from './LinkButton'
+export { default as Text } from './Text'
