@@ -52,6 +52,7 @@ export const ScrollText = styled.div<ScrollTextProps>`
   min-width: 1200px;
   overflow: hidden;
   color: transparent;
+  text-align: center;
   background-image: linear-gradient(0deg, ${COLORS.yellow}, ${COLORS.orange});
   background-size: 100%;
   background-repeat: repeat;
