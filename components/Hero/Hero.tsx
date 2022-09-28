@@ -15,7 +15,7 @@ const HeroSection = () => {
       <img
         src="/dragon.png"
         alt="Dragon illustration"
-        className="z-10 absolute bottom-0 left-[15%] sm:block hidden md:w-[550px] w-[80%] self-start"
+        className="z-10 absolute bottom-0 left-[15%] sm:block hidden md:w-[550px] w-[80%] self-start opacity-[0.97]"
       />
       <Navbar />
       <ScrollingText
