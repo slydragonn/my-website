@@ -1,12 +1,13 @@
 import Link from 'next/link'
+import { ReactNode } from 'react'
 import styled, { keyframes } from 'styled-components'
 
 interface LinkItemProps {
   href: string
-  children: string
+  children: string | ReactNode
 }
 
-const LinkItem = ({ children, href }: LinkItemProps) => {
+export const LinkItem = ({ children, href }: LinkItemProps) => {
   return (
     <Link href={href}>
       <a>{children}</a>
@@ -41,16 +42,16 @@ const Navbar = () => {
     <nav>
       <ul className="z-20 relative text-white font-thin sm:text-7xl md:text-8xl text-6xl text-right">
         <ListItem>
-          <LinkItem href="#">ABOUT</LinkItem>
+          <LinkItem href="/#">ABOUT</LinkItem>
         </ListItem>
         <ListItem>
-          <LinkItem href="#">PROJECTS</LinkItem>
+          <LinkItem href="/#">PROJECTS</LinkItem>
         </ListItem>
         <ListItem>
-          <LinkItem href="#">POSTS</LinkItem>
+          <LinkItem href="/#">POSTS</LinkItem>
         </ListItem>
         <ListItem>
-          <LinkItem href="#">BLOG</LinkItem>
+          <LinkItem href="/#">BLOG</LinkItem>
         </ListItem>
       </ul>
     </nav>
