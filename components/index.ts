@@ -1,6 +1,8 @@
 export { default as AboutSection } from './About'
+export { default as ExternalLink } from './ExternalLink'
 export { default as GridTitle } from './GridTitle'
 export { default as HeroSection } from './Hero'
 export * from './layouts'
 export { default as LinkButton } from './LinkButton'
+export { default as PostsSection } from './Posts'
 export { default as Text } from './Text'
