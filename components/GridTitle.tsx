@@ -4,7 +4,7 @@ interface GridTitleProps {
 
 const GridTitle = ({children}: GridTitleProps) => {
   return (
-    <h2 className="text-gray-300 text-xl">
+    <h2 className="text-gray-300 sm:text-xl text-base">
       {children}
     </h2>
   )

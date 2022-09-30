@@ -9,6 +9,9 @@ interface MainLayoutProps {
 const Main = styled.main`
   background-color: ${COLORS.black};
   padding: 40px;
+  @media screen and (max-width: 500px){
+    padding: 20px;
+  }
 `
 
 const MainLayout = ({ children }: MainLayoutProps) => {

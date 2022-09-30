@@ -5,13 +5,13 @@ import ScrollingText from './ScrollingText'
 
 const HeroSection = () => {
   return (
-    <header className="relative flex justify-between items-center w-full h-[570px] overflow-y-hidden md:px-14 px-7 border-b border-gray-400">
+    <header className="relative flex sm:justify-between justify-center items-center w-full h-[570px] overflow-y-hidden md:px-14 px-7 border-b border-gray-400">
       <ScrollingText
         text="ALEJANDRO LONDOÑO"
         position="top"
         direction="right"
       />
-      <DownIcon className="w-12 h-16 text-white" />
+      <DownIcon className="w-12 h-16 text-white sm:block hidden" />
       <img
         src="/dragon.png"
         alt="Dragon illustration"

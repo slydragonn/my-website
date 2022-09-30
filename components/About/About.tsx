@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const AboutSection = () => {
   return (
-    <section className="flex h-full md:flex-row flex-col md:justify-start justify-between sm:pl-20 pl-6 border-l border-l-[#767676] pb-28">
+    <section className="flex h-full md:flex-row flex-col justify-start">
       <Image
         src='/profile.jpeg'
         alt='Alejandro Londoño'
