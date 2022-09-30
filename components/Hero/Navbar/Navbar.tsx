@@ -40,7 +40,7 @@ const ListItem = styled.li`
 const Navbar = () => {
   return (
     <nav>
-      <ul className="z-20 relative text-white font-thin sm:text-7xl md:text-8xl text-6xl text-right">
+      <ul className="z-20 relative text-white font-thin sm:text-7xl md:text-8xl text-6xl sm:text-right text-center">
         <ListItem>
           <LinkItem href="/#">ABOUT</LinkItem>
         </ListItem>
