@@ -79,7 +79,7 @@ const Home: NextPage = () => {
           </GridLayout>
         </MainLayout>
       </div>
-      <Footer link='/' />
+      <Footer link="/" />
     </div>
   )
 }

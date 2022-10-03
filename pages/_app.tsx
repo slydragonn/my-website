@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-          <link rel="icon" href="/fireball.png" />
+        <link rel="icon" href="/fireball.png" />
       </Head>
       <Component {...pageProps} />
     </>

@@ -1,13 +1,13 @@
-import { Footer, HomeButton, MainLayout, ProjectItem } from "components";
-import type { NextPage } from "next";
-import Head from 'next/head';
+import { Footer, HomeButton, MainLayout, ProjectItem } from 'components'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const Projects: NextPage = () => {
   return (
     <>
       <Head>
-          <title>Alejandro Londoño - Projects</title>
-          <meta name="description" content="Alejandro's projects" />
+        <title>Alejandro Londoño - Projects</title>
+        <meta name="description" content="Alejandro's projects" />
       </Head>
       <MainLayout>
         <HomeButton />
@@ -18,7 +18,7 @@ const Projects: NextPage = () => {
             date="2022.10"
             image="/wrappers.jpeg"
             link="https://www.instagram.com/p/CjN4_90u95y/"
-            madeWith={["inkscape", "figma"]}
+            madeWith={['inkscape', 'figma']}
           />
           <ProjectItem
             title="Barber's website"
@@ -26,15 +26,15 @@ const Projects: NextPage = () => {
             date="2022.09"
             image="/barber.png"
             link="https://daniel-website-theta.vercel.app/"
-            madeWith={["typescript", "nextjs", "css modules"]}
+            madeWith={['typescript', 'nextjs', 'css modules']}
           />
           <ProjectItem
-            title="react easy comments" 
-            description="It's a simple library with that you can create a React Comments Sections Component." 
-            date="2022.08" 
-            image="/easy-comments.png" 
-            link="https://github.com/slydragonn/react-easy-comments" 
-            madeWith={["typescript", "storybook", "sass"]}
+            title="react easy comments"
+            description="It's a simple library with that you can create a React Comments Sections Component."
+            date="2022.08"
+            image="/easy-comments.png"
+            link="https://github.com/slydragonn/react-easy-comments"
+            madeWith={['typescript', 'storybook', 'sass']}
           />
           <ProjectItem
             title="mark writer"
@@ -42,11 +42,11 @@ const Projects: NextPage = () => {
             date="2022.07"
             image="/markwriter.jpg"
             link="https://markwriter.tech/"
-            madeWith={["typescript", "nextjs", "codemirror"]}
+            madeWith={['typescript', 'nextjs', 'codemirror']}
           />
         </section>
       </MainLayout>
-      <Footer link="/projects"/>
+      <Footer link="/projects" />
     </>
   )
 }

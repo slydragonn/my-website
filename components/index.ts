@@ -8,4 +8,3 @@ export { CustomButton, default as LinkButton, HomeButton } from './LinkButton'
 export { default as PostsSection } from './Posts'
 export { default as ProjectItem } from './ProjectItem'
 export { default as Text } from './Text'
-
