@@ -41,17 +41,17 @@ const Home: NextPage = () => {
       <div className='z-20 fixed top-0 left-0 w-full'>
         <HeroSection />
       </div>
-      <div className='z-30 relative mt-[570px]'>
+      <div className='z-30 relative mt-[100vh]'>
         <MainLayout>
           <GridLayout>
             <GridTitle>about</GridTitle>
             <GridItem><AboutSection /></GridItem>
             <GridTitle>projects</GridTitle>
-            <GridItem><LinkButton href='/projects' message='See projects'/></GridItem>
+            <GridItem><LinkButton href='/projects' message='See projects' isExternal={false}/></GridItem>
             <GridTitle>posts</GridTitle>
             <GridItem><PostsSection posts={myPosts}/></GridItem>
             <GridTitle>blog</GridTitle>
-            <GridItem><LinkButton href='/blog' message='Go to blog'/></GridItem>
+            <GridItem><LinkButton href='/blog' message='Go to blog' isExternal={false}/></GridItem>
           </GridLayout>
         </MainLayout>
       </div>
