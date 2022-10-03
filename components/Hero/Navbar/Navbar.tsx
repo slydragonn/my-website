@@ -41,13 +41,13 @@ const Navbar = () => {
     <nav>
       <ul className="z-20 absolute top-0 left-0 bottom-0 right-0 m-auto flex justify-around items-center rounded w-[320px] h-[70px] text-white font-thin bg-[#181818]/30 backdrop-blur">
         <ListItem>
-          <LinkItem href="/#">about</LinkItem>
+          <LinkItem href="/#about">about</LinkItem>
         </ListItem>
         <ListItem>
           <LinkItem href="/projects">projects</LinkItem>
         </ListItem>
         <ListItem>
-          <LinkItem href="/#">posts</LinkItem>
+          <LinkItem href="/#posts">posts</LinkItem>
         </ListItem>
         <ListItem>
           <LinkItem href="/#">blog</LinkItem>
