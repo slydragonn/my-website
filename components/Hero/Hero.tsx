@@ -1,28 +1,32 @@
 /* eslint-disable @next/next/no-img-element */
-import { CgArrowLongDown as DownIcon } from 'react-icons/cg'
-import Navbar from './Navbar'
-import ScrollingText from './ScrollingText'
+
+import styled from "styled-components"
+import { COLORS } from 'utils'
+import Navbar from "./Navbar"
+
+const GradientText = styled.p`
+  color: transparent;
+  text-align: center;
+  background-image: linear-gradient(0deg, ${COLORS.yellow}, ${COLORS.orange});
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: 10px;
+  border-top: 1px solid ${COLORS.gray};
+  border-bottom: 1px solid ${COLORS.gray};
+  `
 
 const HeroSection = () => {
   return (
-    <header className="relative flex sm:justify-between justify-center items-center w-full h-[570px] overflow-y-hidden md:px-14 px-7 border-b border-gray-400">
-      <ScrollingText
-        text="ALEJANDRO LONDOÑO"
-        position="top"
-        direction="right"
-      />
-      <DownIcon className="w-12 h-16 text-white sm:block hidden" />
-      <img
-        src="/dragon.png"
-        alt="Dragon illustration"
-        className="z-10 absolute bottom-0 left-[15%] sm:block hidden md:w-[550px] w-[80%] self-start opacity-[0.97]"
-      />
-      <Navbar />
-      <ScrollingText
-        text="FRONT-END DEVELOPER"
-        position="bottom"
-        direction="left"
-      />
+    <header className="relative flex  justify-center items-center w-full h-[100vh] py-4 border-b border-gray-400">
+     <Navbar />
+     <section className="w-full text-6xl sm:text-[85px] md:text-[100px] font-black text-center transition-all">
+        <GradientText>ALEJANDRO</GradientText>
+        <GradientText>LONDOÑO</GradientText>
+        <GradientText>FRONT-END</GradientText>
+        <GradientText>DEVELOPER</GradientText>
+     </section>
     </header>
   )
 }
