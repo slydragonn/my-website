@@ -29,7 +29,7 @@ interface PostsSectionProps {
 
 const PostsSection = ({ posts }: PostsSectionProps) => {
   return (
-    <ul className="list-disc text-[#767676]">
+    <ul className="list-disc text-[#767676]" id='posts'>
       {posts.map(post => (
         <PostItem key={post.id} post={post} />
       ))}

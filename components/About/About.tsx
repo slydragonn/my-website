@@ -5,7 +5,7 @@ import Skills from './Skills'
 const AboutSection = () => {
   return (
     <>
-      <section className="flex flex-col md:flex-row justify-start">
+      <section className="flex flex-col md:flex-row justify-start" id='about'>
         <Image
           src="/profile.jpeg"
           alt="Alejandro Londoño"
@@ -22,7 +22,7 @@ const AboutSection = () => {
               I like to experiment with all kinds of things, especially programming and I love creating new projects.
             </Text>
           </span>
-          <LinkButton message="On the web" href="/#" isExternal={false} />
+          <LinkButton message="On the web" href="/social" isExternal={false} />
         </div>
       </section>
       <Skills />
