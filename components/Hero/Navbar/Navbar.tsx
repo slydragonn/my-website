@@ -29,7 +29,7 @@ const show = keyframes`
 
 const ListItem = styled.li`
   animation: ${show} 1s;
-  transition: all .3s;
+  transition: all 0.3s;
 
   &:hover {
     transform: translateY(-5px);

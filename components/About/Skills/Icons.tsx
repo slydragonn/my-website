@@ -21,48 +21,51 @@ import {
   SiVuedotjs as VueIcon
 } from 'react-icons/si'
 
-export default function getSkillComponent(name:string, tailwindStyles:string) {
-  switch(name) {
+export default function getSkillComponent(
+  name: string,
+  tailwindStyles: string
+) {
+  switch (name) {
     case 'typescript':
-      return <TypeScriptIcon className={tailwindStyles}/>
+      return <TypeScriptIcon className={tailwindStyles} />
     case 'javascript':
-      return <JavaScriptIcon className={tailwindStyles}/>
+      return <JavaScriptIcon className={tailwindStyles} />
     case 'html':
-      return <HtmlIcon className={tailwindStyles}/>
+      return <HtmlIcon className={tailwindStyles} />
     case 'css':
-      return <CssIcon className={tailwindStyles}/>
+      return <CssIcon className={tailwindStyles} />
     case 'sass':
-      return <SassIcon className={tailwindStyles}/>
+      return <SassIcon className={tailwindStyles} />
     case 'react':
-      return <ReactIcon className={tailwindStyles}/>
+      return <ReactIcon className={tailwindStyles} />
     case 'nextjs':
-      return <NextIcon className={tailwindStyles}/>
+      return <NextIcon className={tailwindStyles} />
     case 'gatsby':
-      return <GatsbyIcon className={tailwindStyles}/>
+      return <GatsbyIcon className={tailwindStyles} />
     case 'vue':
-      return <VueIcon className={tailwindStyles}/>
+      return <VueIcon className={tailwindStyles} />
     case 'tailwind':
-      return <TailwindIcon className={tailwindStyles}/>
+      return <TailwindIcon className={tailwindStyles} />
     case 'nodejs':
-      return <NodeIcon className={tailwindStyles}/>
+      return <NodeIcon className={tailwindStyles} />
     case 'express':
-      return <ExpressIcon className={tailwindStyles}/>
+      return <ExpressIcon className={tailwindStyles} />
     case 'python':
-      return <PythonIcon className={tailwindStyles}/>
+      return <PythonIcon className={tailwindStyles} />
     case 'django':
-      return <DjangoIcon className={tailwindStyles}/>
+      return <DjangoIcon className={tailwindStyles} />
     case 'git':
-      return <GitIcon className={tailwindStyles}/>
+      return <GitIcon className={tailwindStyles} />
     case 'figma':
-      return <FigmaIcon className={tailwindStyles}/>
+      return <FigmaIcon className={tailwindStyles} />
     case 'vscode':
-      return <VSCodeIcon className={tailwindStyles}/>
+      return <VSCodeIcon className={tailwindStyles} />
     case 'vim':
-      return <VimIcon className={tailwindStyles}/>
+      return <VimIcon className={tailwindStyles} />
     case 'inkscape':
-      return <InkscapeIcon className={tailwindStyles}/>
+      return <InkscapeIcon className={tailwindStyles} />
     case 'notion':
-     return <NotionIcon className={tailwindStyles}/>
+      return <NotionIcon className={tailwindStyles} />
     default:
       return undefined
   }

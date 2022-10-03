@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
-import styled from "styled-components"
+import styled from 'styled-components'
 import { COLORS } from 'utils'
-import Navbar from "./Navbar"
+import Navbar from './Navbar'
 
 const GradientText = styled.p`
   color: transparent;
@@ -15,18 +15,18 @@ const GradientText = styled.p`
   margin-bottom: 10px;
   border-top: 1px solid ${COLORS.gray};
   border-bottom: 1px solid ${COLORS.gray};
-  `
+`
 
 const HeroSection = () => {
   return (
     <header className="relative flex  justify-center items-center w-full h-[100vh] py-4 border-b border-gray-400">
-     <Navbar />
-     <section className="w-full text-6xl sm:text-[85px] md:text-[100px] font-black text-center transition-all">
+      <Navbar />
+      <section className="w-full text-6xl sm:text-[85px] md:text-[100px] font-black text-center transition-all">
         <GradientText>ALEJANDRO</GradientText>
         <GradientText>LONDOÑO</GradientText>
         <GradientText>FRONT-END</GradientText>
         <GradientText>DEVELOPER</GradientText>
-     </section>
+      </section>
     </header>
   )
 }

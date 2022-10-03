@@ -1,2 +1,1 @@
-export { default, LinkItem } from './Navbar';
-
+export { default, LinkItem } from './Navbar'
