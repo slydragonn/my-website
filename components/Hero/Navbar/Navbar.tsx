@@ -44,7 +44,7 @@ const Navbar = () => {
           <LinkItem href="/#">about</LinkItem>
         </ListItem>
         <ListItem>
-          <LinkItem href="/#">projects</LinkItem>
+          <LinkItem href="/projects">projects</LinkItem>
         </ListItem>
         <ListItem>
           <LinkItem href="/#">posts</LinkItem>

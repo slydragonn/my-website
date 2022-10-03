@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <header className="relative flex  justify-center items-center w-full h-[100vh] py-4 border-b border-gray-400">
       <Navbar />
-      <section className="w-full text-6xl sm:text-[85px] md:text-[100px] font-black text-center transition-all">
+      <section className="w-full text-6xl sm:text-[85px] md:text-[100px] font-black text-center transition-all select-none">
         <GradientText>ALEJANDRO</GradientText>
         <GradientText>LONDOÑO</GradientText>
         <GradientText>FRONT-END</GradientText>

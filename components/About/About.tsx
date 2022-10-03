@@ -14,11 +14,12 @@ const AboutSection = () => {
           className="rounded-sm"
         />
         <div className="flex flex-col justify-start md:justify-between pl-0 md:pl-20">
+          <div className='bg-[#1d1d1d] p-4 rounded shadow-sm text-center mt-4 md:mt-0'>
+            <span className='text-white font-thin text-base md:text-lg'>Hi! I&apos;m Front-End Developer / Designer</span>
+          </div>
           <span className="lg:w-[450px] w-full mb-2 lg:mt-10 mt-2">
             <Text>
-              I&apos;m a front-end developer passionate about my work, I like to
-              experiment with all kinds of things, especially programming and I
-              love creating new projects.
+              I like to experiment with all kinds of things, especially programming and I love creating new projects.
             </Text>
           </span>
           <LinkButton message="On the web" href="/#" isExternal={false} />
