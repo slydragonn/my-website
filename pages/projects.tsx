@@ -1,4 +1,4 @@
-import { CustomButton, Footer, LinkItem, MainLayout, ProjectItem } from "components";
+import { Footer, HomeButton, MainLayout, ProjectItem } from "components";
 import type { NextPage } from "next";
 import Head from 'next/head';
 
@@ -10,10 +10,7 @@ const Projects: NextPage = () => {
           <meta name="description" content="Alejandro's projects" />
       </Head>
       <MainLayout>
-        <div className="flex items-center justify-between w-28 bg-[#1d1d1d] pr-3 rounded mb-20">
-          <CustomButton><LinkItem href="/">&#8592;</LinkItem></CustomButton>
-          <span className="first-line:text-gray-300 font-thin cursor-default select-none">HOME</span>
-        </div>
+        <HomeButton />
         <section className="flex flex-col items-center">
           <ProjectItem
             title="chocolate wrappers"

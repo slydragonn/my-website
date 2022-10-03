@@ -26,6 +26,15 @@ interface LinkButtonProps {
   isExternal: boolean
 }
 
+export const HomeButton = () => {
+  return (
+    <div className="flex items-center justify-between w-28 bg-[#1d1d1d] pr-3 rounded mb-20">
+      <CustomButton><LinkItem href="/">&#8592;</LinkItem></CustomButton>
+      <span className="first-line:text-gray-300 font-thin cursor-default select-none">HOME</span>
+    </div>
+  )
+}
+
 const LinkButton = ({ message, href, isExternal }: LinkButtonProps) => {
   return (
     <div className="flex flex-col w-44 pl-4 pt-2 pb-6 border-l border-t border-[#767676]">
