@@ -4,12 +4,7 @@ import { COLORS } from 'utils'
 import { BsArrowRight as RightIcon } from 'react-icons/bs'
 import { LinkItem } from "./Hero/Navbar"
 
-interface LinkButtonProps {
-  message: string
-  href: string
-}
-
-const CustomButton = styled.button`
+export const CustomButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +20,24 @@ const CustomButton = styled.button`
     transform: translateX(5px);
   }
 `
+interface LinkButtonProps {
+  message: string
+  href: string
+  isExternal: boolean
+}
 
-const LinkButton = ({ message, href }: LinkButtonProps) => {
+
+const LinkButton = ({ message, href, isExternal }: LinkButtonProps) => {
   return (
     <div className="flex flex-col w-44 pl-4 pt-2 pb-6 border-l border-t border-[#767676]">
       <span className="mb-3 text-gray-300 font-medium">{message}</span>
-      <CustomButton><LinkItem href={href}><RightIcon /></LinkItem></CustomButton>
+      <CustomButton>
+        {
+          isExternal
+          ? <a href={href} target='_blank' rel="noreferrer"><RightIcon /></a>
+          : <LinkItem href={href}><RightIcon /></LinkItem>
+        }
+      </CustomButton>
     </div>
   )
 }
