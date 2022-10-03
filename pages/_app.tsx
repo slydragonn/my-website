@@ -1,12 +1,14 @@
-import { Footer } from 'components'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
+      <Head>
+          <link rel="icon" href="/fireball.png" />
+      </Head>
       <Component {...pageProps} />
-      <Footer />
     </>
   )
 }

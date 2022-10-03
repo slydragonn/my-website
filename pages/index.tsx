@@ -1,5 +1,6 @@
 import {
   AboutSection,
+  Footer,
   GridItem,
   GridLayout,
   GridTitle,
@@ -44,7 +45,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Alejandro Londoño - Home</title>
         <meta name="description" content="Alejandro's website" />
-        <link rel="icon" href="/fireball.png" />
       </Head>
       <div className="z-20 fixed top-0 left-0 w-full">
         <HeroSection />
@@ -79,6 +79,7 @@ const Home: NextPage = () => {
           </GridLayout>
         </MainLayout>
       </div>
+      <Footer link='/' />
     </div>
   )
 }

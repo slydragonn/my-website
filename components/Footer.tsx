@@ -23,7 +23,11 @@ const CustomFooter = styled.footer`
   }
 `
 
-const Footer = () => {
+interface FooterProps {
+  link: string
+}
+
+const Footer = ({link}: FooterProps) => {
   return (
     <CustomFooter>
       <Image
@@ -34,28 +38,28 @@ const Footer = () => {
       />
       <ul className="flex flex-col sm:flex-row justify-around items-center w-[100%] md:w-[600px] h-[250px] md:h-[80px] mb-5 md:mb-0 bg-[#181818] text-gray-300 font-thin rounded self-center">
         <li>
-          <a target="_blank" href="/#">
+          <a target="_blank" href="https://github.com/slydragonn" rel="noreferrer">
             GITHUB
           </a>
         </li>
         <li>
-          <a target="_blank" href="/#">
+          <a target="_blank" href="https://www.linkedin.com/in/alejolg/" rel="noreferrer">
             LINKEDIN
           </a>
         </li>
         <li>
-          <a target="_blank" href="/#">
+          <a target="_blank" href="https://www.instagram.com/sly_dragonn/" rel="noreferrer">
             INSTAGRAM
           </a>
         </li>
         <li>
-          <a target="_blank" href="/#">
+          <a target="_blank" href="https://medium.com/@slydragonn" rel="noreferrer">
             MEDIUM
           </a>
         </li>
       </ul>
       <CustomButton className="self-center">
-        <LinkItem href="/">&#8593;</LinkItem>
+        <LinkItem href={link}>&#8593;</LinkItem>
       </CustomButton>
     </CustomFooter>
   )
