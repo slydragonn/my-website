@@ -32,7 +32,7 @@ const ProjectItem = ({
       <section className="flex flex-col md:flex-row justify-between w-full">
         <div className="flex flex-col justify-between">
           <LinkButton message="Visit" href={link} isExternal={true} />
-          <section className="flex items-center w-auto p-4 bg-[#181818] my-5 md:my-0 rounded">
+          <section data-aos="zoom-in" data-aos-delay='800' data-aos-once="true" className="flex items-center w-auto p-4 bg-[#181818] my-5 md:my-0 rounded">
             <span className="font-thin text-gray-300 text-sm mr-3">
               MADE WITH:
             </span>

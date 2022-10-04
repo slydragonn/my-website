@@ -1,3 +1,5 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import {
   AboutSection,
   Footer,
@@ -11,6 +13,7 @@ import {
 } from 'components'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useEffect } from 'react'
 
 const myPosts = [
   {
@@ -40,6 +43,11 @@ const myPosts = [
 ]
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000
+    })
+  }, [])
   return (
     <div>
       <Head>

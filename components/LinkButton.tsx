@@ -41,7 +41,7 @@ export const HomeButton = () => {
 
 const LinkButton = ({ message, href, isExternal }: LinkButtonProps) => {
   return (
-    <div className="flex flex-col w-44 pl-4 pt-2 pb-6 border-l border-t border-[#767676]">
+    <div data-aos="fade-right" data-aos-delay='500' data-aos-once="true" className="flex flex-col w-44 pl-4 pt-2 pb-6 border-l border-t border-[#767676]">
       <span className="mb-3 text-gray-300 font-medium">{message}</span>
       <CustomButton>
         {isExternal ? (

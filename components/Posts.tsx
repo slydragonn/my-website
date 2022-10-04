@@ -13,7 +13,7 @@ interface PostItemProps {
 
 const PostItem = ({ post }: PostItemProps) => {
   return (
-    <li className="mb-9">
+    <li className="mb-9" data-aos="fade-right" data-aos-delay='300'>
       <article className="flex">
         <span className="text-[#767676] mr-2">{post.date}</span>
         <p className="text-gray-300">- {post.title}</p>

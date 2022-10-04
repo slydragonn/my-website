@@ -12,9 +12,10 @@ const AboutSection = () => {
           width={400}
           height={400}
           className="rounded-sm"
+          data-aos="zoom-in-up"
         />
         <div className="flex flex-col justify-start md:justify-between pl-0 md:pl-20">
-          <div className="bg-[#1d1d1d] p-4 rounded shadow-sm text-center mt-4 md:mt-0">
+          <div data-aos="zoom-in" className="bg-[#1d1d1d] p-4 rounded shadow-sm text-center mt-4 md:mt-0">
             <span className="text-white font-thin text-base md:text-lg">
               Hi! I&apos;m Front-End Developer / Designer
             </span>
