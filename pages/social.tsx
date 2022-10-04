@@ -1,5 +1,6 @@
 import { HomeButton } from 'components'
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
 import { ReactNode } from 'react'
 import {
@@ -24,6 +25,10 @@ const SocialItem = ({ children }: SocialItemProps) => {
 const Social: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Alejandro Londoño - Social Media</title>
+        <meta name="description" content="Alejandro's website" />
+      </Head>
       <div className="absolute top-4 left-4">
         <HomeButton />
       </div>
