@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { COLORS } from 'utils'
 import Navbar from './Navbar'
 
-const GradientText = styled.p`
+const GradientText = styled.div`
   margin-bottom: 10px;
   border-top: 1px solid ${COLORS.gray};
   border-bottom: 1px solid ${COLORS.gray};
