@@ -47,6 +47,7 @@ const Home: NextPage = () => {
     AOS.init({
       duration: 1000
     })
+    AOS.refreshHard()
   }, [])
   return (
     <div>
