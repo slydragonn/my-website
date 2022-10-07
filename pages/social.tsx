@@ -32,7 +32,7 @@ const Social: NextPage = () => {
       <div className="absolute top-4 left-4">
         <HomeButton />
       </div>
-      <section className="flex flex-col items-center justify-center w-full min-h-[100vh] px-4 sm:px-10">
+      <section className="flex flex-col items-center justify-center w-full min-h-[100vh] bg-[url(/bg.png)] px-4 sm:px-10">
         <div className="w-[120px] h-[120px]">
           <Image
             src="/profile.jpeg"
