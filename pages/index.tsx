@@ -80,9 +80,9 @@ const Home: NextPage = () => {
             <GridTitle>blog</GridTitle>
             <GridItem>
               <LinkButton
-                href="/blog"
+                href="https://slyblog.vercel.app"
                 message="Go to blog"
-                isExternal={false}
+                isExternal={true}
               />
             </GridItem>
           </GridLayout>

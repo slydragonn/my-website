@@ -50,7 +50,7 @@ const Navbar = () => {
           <LinkItem href="/#posts">posts</LinkItem>
         </ListItem>
         <ListItem>
-          <LinkItem href="/#">blog</LinkItem>
+          <LinkItem href="https://slyblog.vercel.app">blog</LinkItem>
         </ListItem>
       </ul>
     </nav>
