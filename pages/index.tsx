@@ -17,6 +17,12 @@ import { useEffect } from 'react'
 
 const myPosts = [
   {
+    id: 'post-5',
+    title: 'Interesting resources for front-end developers',
+    date: '2022.10',
+    url: 'https://slyblog.vercel.app/posts/resources-for-frontend-developers'
+  },
+  {
     id: 'post-4',
     title: 'El uso del operador ternario vs if & else',
     date: '2022.09',
