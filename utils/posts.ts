@@ -1,5 +1,11 @@
 const myPosts = [
   {
+    id: 'post-6',
+    title: '7 Amazing VS Code Extensions',
+    date: '2022.19',
+    url: 'https://slyblog.vercel.app/posts/vscode-extensions'
+  },
+  {
     id: 'post-5',
     title: 'Interesting resources for front-end developers',
     date: '2022.10',
