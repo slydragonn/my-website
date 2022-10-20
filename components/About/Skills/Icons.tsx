@@ -18,7 +18,8 @@ import {
   SiTypescript as TypeScriptIcon,
   SiVim as VimIcon,
   SiVisualstudiocode as VSCodeIcon,
-  SiVuedotjs as VueIcon
+  SiVuedotjs as VueIcon,
+  SiMysql as MysqlIcon
 } from 'react-icons/si'
 
 export default function getSkillComponent(
@@ -66,6 +67,8 @@ export default function getSkillComponent(
       return <InkscapeIcon className={tailwindStyles} />
     case 'notion':
       return <NotionIcon className={tailwindStyles} />
+    case 'mysql':
+      return <MysqlIcon className={tailwindStyles} />
     default:
       return undefined
   }

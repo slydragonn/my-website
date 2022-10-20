@@ -12,7 +12,7 @@ const frontendSkills = [
   'vue',
   'tailwind'
 ]
-const backendSkills = ['nodejs', 'express', 'python', 'django']
+const backendSkills = ['mysql', 'nodejs', 'express', 'python', 'django']
 const toolsSkills = ['git', 'figma', 'vscode', 'vim', 'inkscape', 'notion']
 
 const Skills = () => {
@@ -22,7 +22,7 @@ const Skills = () => {
         Skills & Tools
       </h2>
       <SkillSlider text="FRONTEND" skills={frontendSkills} />
-      <SkillSlider text="BACKEND" skills={backendSkills} />
+      <SkillSlider text="BD | BACKEND" skills={backendSkills} />
       <SkillSlider text="TOOLS" skills={toolsSkills} />
     </section>
   )
