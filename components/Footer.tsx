@@ -38,7 +38,7 @@ const Footer = ({ link }: FooterProps) => {
         data-aos="zoom-in-up"
         data-aos-once="false"
       />
-      <ul className="flex flex-col sm:flex-row justify-around items-center w-[100%] md:w-[600px] h-[250px] md:h-[80px] mb-5 md:mb-0 bg-[#181818] bg-[url(/bg.png)] text-gray-300 font-thin rounded self-center">
+      <ul className="flex flex-col sm:flex-row justify-around items-center w-[100%] md:w-[600px] h-[250px] md:h-[80px] mb-5 md:mb-0 bg-[#181818] bg-[url(/bg.png)] text-gray-300 text-sm font-thin rounded self-center">
         <li>
           <a
             target="_blank"
@@ -51,10 +51,10 @@ const Footer = ({ link }: FooterProps) => {
         <li>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/alejolg/"
+            href="https://www.youtube.com/channel/UCzTcqvA5oGFZA8RQH3kMlkQ"
             rel="noreferrer"
           >
-            LINKEDIN
+            YOUTUBE
           </a>
         </li>
         <li>
