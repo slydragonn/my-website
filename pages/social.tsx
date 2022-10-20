@@ -1,59 +1,60 @@
 import { HomeButton } from 'components'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import { ReactNode } from 'react'
 import {
   SiGithub as GithubIcon,
-  SiInstagram as InstagramIcon,
   SiLinkedin as LinkedinIcon,
-  SiMedium as MediumIcon
+  SiYoutube as YoutubeIcon,
+  SiTwitter as TwitterIcon
 } from 'react-icons/si'
 
 interface SocialItemProps {
-  children: ReactNode
+  children: ReactNode,
+  color: string
 }
 
-const SocialItem = ({ children }: SocialItemProps) => {
+const SocialItem = ({ children, color }: SocialItemProps) => {
   return (
-    <section className="flex justify-between items-center w-full bg-[#181818]/60 text-white font-thin text-lg py-5 px-10 backdrop-blur-sm rounded mt-1 sm:mt-4 shadow-lg hover:translate-x-4 transition-all">
+    <li style={{backgroundColor: color, boxShadow: '7px 7px #181818'}} className="flex justify-around items-center w-full text-[#181818] font-medium text-lg border-[3px] border-[#181818] py-3 px-10 rounded-sm mt-4 sm:mt-8 hover:translate-x-4 transition-all">
       {children}
-    </section>
+    </li>
   )
 }
 
 const Social: NextPage = () => {
   return (
-    <>
+    <div className='relative'>
       <Head>
         <title>Alejandro Londoño - Social Media</title>
         <meta name="description" content="Alejandro's website" />
       </Head>
-      <div className="absolute top-4 left-4">
+      <div className="z-20 absolute top-4 left-4">
         <HomeButton />
       </div>
-      <section className="flex flex-col items-center justify-center w-full min-h-[100vh] bg-[url(/bg.png)] px-4 sm:px-10">
-        <div className="w-[120px] h-[120px]">
-          <Image
-            src="/profile.jpeg"
+      <section className="z-0 relative flex flex-col items-center justify-center w-full min-h-[100vh] py-5 px-4 sm:px-10 bg-yellow-400">
+        <div>
+         { /* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/github.png"
             alt="Alejandro Londoño"
-            width={120}
-            height={120}
-            className="rounded-full"
+            className=" w-[100px] h-[100px] rounded-full object-cover border border-[#181818]"
           />
         </div>
-        <section className="relative w-full sm:w-[600px] flex justify-center border-r border-r-[#767676] border-t border-t-[#767676] rounded-tr p-4 mt-8">
-          <div className="z-0 absolute top-0 left-0 bottom-0 right-0 m-auto flex flex-col uppercase text-white text-5xl sm:text-6xl md:text-8xl text-center font-extrabold transition-all select-none">
-            <span className="mb-6 md:mb-1">alejandro</span>
-            <span className="mb-6 md:mb-1">londoño</span>
-            <span className="mb-6 md:mb-1">frontend</span>
-            <span className="mb-6 md:mb-1">developer</span>
-          </div>
-          <div className="z-10 relative w-[250px] sm:w-[80%] md:w-[350px] px-4 border-l border-l-[#767676] border-t border-t-[#767676] rounded-tl">
-            <SocialItem>
+        <h1 className='text-lg font-bold mt-2'>slydragonn</h1>
+        <span className='font-thin text-center'>🚀 Front-End Developer | 💻 Digital Craftsman</span>
+        <section className='flex'>
+          <span className="font-semibold mr-3">More about me:</span>
+          <ul className="flex font-thin">
+            <li className='underline mr-2'><a href="https://slydragonn.site/projects" target='_blank' rel="noreferrer">Projects</a></li>
+            <li className='underline'><a href="https://slyblog.vercel.app" target='_blank' rel="noreferrer">Blog</a></li>
+          </ul>
+        </section>
+        <ul className="z-10 relative w-full sm:w-[400px] flex flex-col justify-center p-4">
+            <SocialItem color='#a97df0'>
               <GithubIcon />
               <a
-                className="hover:text-orange-500 transition-all duration-300"
+                className="hover:text-yellow-400 transition-all duration-300"
                 target="_blank"
                 href="https://github.com/slydragonn"
                 rel="noreferrer"
@@ -61,21 +62,32 @@ const Social: NextPage = () => {
                 @slydragonn
               </a>
             </SocialItem>
-            <SocialItem>
-              <InstagramIcon />
+            <SocialItem color='#61ebf0'>
+              <TwitterIcon />
               <a
-                className="hover:text-orange-500 transition-all duration-300"
+                className="hover:text-yellow-400 transition-all duration-300"
                 target="_blank"
-                href="https://www.instagram.com/sly_dragonn/"
+                href="https://twitter.com/slydragonn"
                 rel="noreferrer"
               >
-                @sly_dragonn
+                @slydragonn
               </a>
             </SocialItem>
-            <SocialItem>
+            <SocialItem color='#f06661'>
+              <YoutubeIcon />
+              <a
+                className="hover:text-yellow-400 transition-all duration-300"
+                target="_blank"
+                href="https://www.youtube.com/channel/UCzTcqvA5oGFZA8RQH3kMlkQ"
+                rel="noreferrer"
+              >
+                @slydragonn
+              </a>
+            </SocialItem>
+            <SocialItem color='#8ef061'>
               <LinkedinIcon />
               <a
-                className="hover:text-orange-500 transition-all duration-300"
+                className="hover:text-yellow-400 transition-all duration-300"
                 target="_blank"
                 href="https://www.linkedin.com/in/alejolg/"
                 rel="noreferrer"
@@ -83,21 +95,9 @@ const Social: NextPage = () => {
                 @alejolg
               </a>
             </SocialItem>
-            <SocialItem>
-              <MediumIcon />
-              <a
-                className="hover:text-orange-500 transition-all duration-300"
-                target="_blank"
-                href="https://medium.com/@slydragonn"
-                rel="noreferrer"
-              >
-                @slydragonn
-              </a>
-            </SocialItem>
-          </div>
-        </section>
+        </ul>
       </section>
-    </>
+    </div>
   )
 }
 
