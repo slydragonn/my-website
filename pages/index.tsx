@@ -9,7 +9,8 @@ import {
   HeroSection,
   LinkButton,
   MainLayout,
-  PostsSection
+  PostsSection,
+  ProjectItem
 } from 'components'
 import type { NextPage } from 'next'
 import Head from 'next/head'
@@ -41,6 +42,14 @@ const Home: NextPage = () => {
             </GridItem>
             <GridTitle>projects</GridTitle>
             <GridItem>
+              <ProjectItem
+              title="💻🌈 latest project"
+              description="React Easy Comments: It's a simple library with that you can create a React Comments Sections Component."
+              date="2022.08"
+              image="/easy-comments.png"
+              link="https://github.com/slydragonn/react-easy-comments"
+              madeWith={['typescript', 'storybook', 'sass']}
+              />
               <LinkButton
                 href="/projects"
                 message="See projects"
