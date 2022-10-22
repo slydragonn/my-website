@@ -35,7 +35,7 @@ const Projects: NextPage = () => {
             description="Personal website for a barber"
             date="2022.09"
             image="/barber.png"
-            link="https://daniel-website-theta.vercel.app/"
+            link="https://danielbarber.vercel.app/"
             madeWith={['typescript', 'nextjs', 'css modules']}
           />
           <ProjectItem
